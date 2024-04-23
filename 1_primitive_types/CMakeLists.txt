@@ -10,4 +10,4 @@ set(EXE src/${PROJECT_NAME}_exe.cpp)
 add_library(${PROJECT_NAME}_lib ${SOURCE})
 add_executable(${PROJECT_NAME}_exe ${EXE})
 target_link_libraries(${PROJECT_NAME}_exe ${PROJECT_NAME}_lib)
-
+target_include_directories(${PROJECT_NAME}_lib INTERFACE ${APP_HEADERS})
