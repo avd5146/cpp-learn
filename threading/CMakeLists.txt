@@ -14,5 +14,5 @@ file(GLOB SOURCES src/*.cpp)
 set(EXE src/${PROJECT_NAME}_exe.cpp)
 add_library(${PROJECT_NAME}_lib ${SOURCES})
 add_executable(${PROJECT_NAME}_exe ${EXE})
-target_link_libraries(${PROJECT_NAME}_exe ${PROJECT_NAME}_lib) # pthread) # for linux
+target_link_libraries(${PROJECT_NAME}_exe ${PROJECT_NAME}_lib pthread) # pthread) # for linux
 

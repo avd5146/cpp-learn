@@ -3,7 +3,7 @@
         {
             "type": "shell",
             "label": "CMake: build",
-            "command": "cd build_cmake && cmake .. && make",
+            "command": "cd build_cmake && cmake .. -DCMAKE_BUILD_TYPE=Debug && make",
             "group": "build",
             "problemMatcher": [],
             "detail": "CMake template build task"
