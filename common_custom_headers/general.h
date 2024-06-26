@@ -4,6 +4,11 @@
 #include <algorithm>
 #include <list>
 #include <string>
+#include <unordered_map>
+#include <queue>
+#include <deque>
+#include <map>
+#include <stack>
 
 namespace Utils
 {
@@ -31,6 +36,19 @@ namespace Utils
             // val = default;
             next = nullptr;
         };
+        SingleListNode(const T&& in)
+        {
+            val = in;
+            next = nullptr;
+        };
+        void print()
+        {
+            SingleListNode* temp = this;
+            while(temp) {
+                cout<<temp->val<<" ";
+                temp = temp->next;
+            }
+        }
     };
 
     // Doubly linked list base struct

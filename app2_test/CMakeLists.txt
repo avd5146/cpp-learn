@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8.11)
+cmake_minimum_required (VERSION 3.0.9)
 project (app2_test)
 
 set(HEADERS ./include ./../app_test/include/)

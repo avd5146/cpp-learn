@@ -1,6 +1,5 @@
 #include <iostream>
-// #include "general.h"
-#include "../../common_custom_headers/general.h"
+#include "general.h"
 
 using namespace std;
 
